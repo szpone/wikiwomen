@@ -4,4 +4,4 @@ from .models import Scientist
 
 @admin.register(Scientist)
 class ScientistAdmin(admin.ModelAdmin):
-    list_display = ("women_number", "men_number", "specialization")
+    list_display = ("women", "men", "specialization")
