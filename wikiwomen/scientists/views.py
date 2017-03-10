@@ -8,3 +8,7 @@ from .forms import ChooseSpecializationForm
 class ChooseSpecialization(FormView):
     template_name = 'scientists/index.html'
     form_class = ChooseSpecializationForm
+
+    def form_valid(self, form):
+        specialization = form.cleaned.data['specialization']
+        return redirect("graph")
