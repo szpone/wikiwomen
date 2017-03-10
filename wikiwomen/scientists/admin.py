@@ -1,12 +1,7 @@
 from django.contrib import admin
-from .models import Scientists, Specialization
+from .models import Scientist
 # Register your models here.
 
-@admin.register(Scientists)
-class ScientistsAdmin(admin.ModelAdmin):
-    list_display = ("name", "gender", "link", "extra_info")
-
-@admin.register(Specialization)
-class SpecializationAdmin(admin.ModelAdmin):
-    list_display = ("name", )
-
+@admin.register(Scientist)
+class ScientistAdmin(admin.ModelAdmin):
+    list_display = ("women_number", "men_number", "specialization")
