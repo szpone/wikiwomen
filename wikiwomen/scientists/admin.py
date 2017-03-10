@@ -8,5 +8,5 @@ class ScientistsAdmin(admin.ModelAdmin):
 
 @admin.register(Specialization)
 class SpecializationAdmin(admin.ModelAdmin):
-    list_display = ("name", "scientists")
+    list_display = ("name", )
 
