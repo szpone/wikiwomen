@@ -4,7 +4,7 @@ from django.db import models
 
 class Scientists(models.Model):
     name = models.CharField(max_length=128)
-    gender = models.CharField(max_lenght=64)
+    gender = models.CharField(max_length=64)
     link = models.CharField(max_length=128)
     extra_info = models.CharField(max_length=128, null=True)
 
